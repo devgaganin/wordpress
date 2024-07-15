@@ -2,6 +2,7 @@ services:
 - type: web
   name: wordpress
   env: docker
+  plan: free
   autoDeploy: true
   disk:
     name: wordpress
@@ -32,6 +33,7 @@ services:
   name: mysql-wordpress
   repo: https://github.com/render-examples/mysql.git
   env: docker
+  plan: free
   autoDeploy: true
   disk:
     name: mysql-wordpress
